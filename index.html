@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kavishanke Adithya - Kalu Creatives</title>
-<meta name="description" content="Kavishanke Adithya — filmmaker and founder of Kalu Creatives. Reels, music videos, documentary and brand film production.">
+<meta name="description" content="Kavishanke Adithya - filmmaker and founder of Kalu Creatives. Reels, music videos, documentary and brand film production.">
 <link rel="icon" href="data:,">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
 
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="top">
 
 <canvas id="dustCanvas" aria-hidden="true"></canvas>
 
@@ -30,7 +30,7 @@
 </div>
 
 <!-- ============================= NAV ============================= -->
-<header class="nav" id="top">
+<header class="nav">
   <a href="#top" class="nav__mark"><img src="kalu-logo.png" alt="Kalu Creatives" class="nav__logo"></a>
   <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -62,31 +62,10 @@
   <div class="hero__scroll" aria-hidden="true">SCROLL <span>&#9662;</span></div>
 </section>
 
-<!-- ============================= WORK ============================= -->
-<section id="work">
-  <div class="section-head">
-    <span class="section-head__code">00:01</span>
-    <h2>Selected Work</h2>
-  </div>
-
-  <div class="filters" role="tablist" aria-label="Filter work by category">
-    <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">ALL</button>
-    <button class="filter" data-filter="aftermovie" role="tab" aria-selected="false">AFTERMOVIE</button>
-    <button class="filter" data-filter="music-videos" role="tab" aria-selected="false">MUSIC VIDEOS</button>
-    <button class="filter" data-filter="documentary" role="tab" aria-selected="false">DOCUMENTARY</button>
-    <button class="filter" data-filter="reels" role="tab" aria-selected="false">REELS</button>
-    <button class="filter" data-filter="others" role="tab" aria-selected="false">OTHERS</button>
-  </div>
-
-  <div class="grid" id="portfolioGrid">
-    <!-- Populated from js/data.js + js/main.js -->
-  </div>
-</section>
-
 <!-- ============================= ABOUT / CV ============================= -->
 <section id="about">
   <div class="section-head">
-    <span class="section-head__code">00:02</span>
+    <span class="section-head__code">00:01</span>
     <h2>The Director's Cut</h2>
   </div>
 
@@ -132,6 +111,27 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============================= WORK ============================= -->
+<section id="work">
+  <div class="section-head">
+    <span class="section-head__code">00:02</span>
+    <h2>Selected Work</h2>
+  </div>
+
+  <div class="filters" role="tablist" aria-label="Filter work by category">
+    <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">ALL</button>
+    <button class="filter" data-filter="aftermovie" role="tab" aria-selected="false">AFTERMOVIE</button>
+    <button class="filter" data-filter="music-videos" role="tab" aria-selected="false">MUSIC VIDEOS</button>
+    <button class="filter" data-filter="documentary" role="tab" aria-selected="false">DOCUMENTARY</button>
+    <button class="filter" data-filter="reels" role="tab" aria-selected="false">REELS</button>
+    <button class="filter" data-filter="others" role="tab" aria-selected="false">OTHERS</button>
+  </div>
+
+  <div class="grid" id="portfolioGrid">
+    <!-- Populated from js/data.js + js/main.js -->
   </div>
 </section>
 
