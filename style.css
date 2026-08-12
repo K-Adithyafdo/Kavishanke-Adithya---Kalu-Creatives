@@ -53,6 +53,15 @@ p:last-child { margin-bottom: 0; }
   outline-offset: 3px;
 }
 
+/* ---------- Dust particle background ---------- */
+#dustCanvas {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  display: block;
+}
+
 /* ---------- Fixed frame + REC indicator (signature device) ---------- */
 .frame {
   position: fixed;
