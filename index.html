@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kavishanke Adithya - Kalu Creatives</title>
+<meta name="description" content="Kavishanke Adithya — filmmaker and founder of Kalu Creatives. Reels, music videos, documentary and brand film production.">
+<link rel="icon" href="data:,">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Fixed frame ticks + REC indicator (signature device) -->
+<div class="frame frame--top" aria-hidden="true">
+  <span class="frame__tick frame__tick--tl"></span>
+  <span class="frame__tick frame__tick--tr"></span>
+</div>
+<div class="frame frame--bottom" aria-hidden="true">
+  <span class="frame__tick frame__tick--bl"></span>
+  <span class="frame__tick frame__tick--br"></span>
+  <span class="frame__rec"><span class="frame__dot"></span>REC</span>
+  <span class="frame__timecode" id="timecode">00:00:00:00</span>
+</div>
+
+<!-- ============================= NAV ============================= -->
+<header class="nav" id="top">
+  <a href="#top" class="nav__mark"><img src="kalu-logo.png" alt="Kalu Creatives" class="nav__logo"></a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav__links" id="navLinks">
+    <a href="#work">WORK</a>
+    <a href="#about">ABOUT</a>
+    <a href="#services">SERVICES</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+</header>
+
+<!-- ============================= HERO ============================= -->
+<section class="hero" id="hero">
+  <div class="hero__grain" aria-hidden="true"></div>
+
+  <p class="eyebrow">FILMMAKER &amp; FOUNDER OF KALU CREATIVES - SRI LANKA</p>
+  <h1 class="hero__title">KAVISHANKE<br>ADITHYA</h1>
+  <p class="hero__tagline">FRAME BY FRAME, STORY BY STORY.</p>
+
+  <!-- ==============================================================
+       EDIT ME: one-line pitch under the tagline — what you shoot,
+       for whom. Keep it to a single short sentence.
+       ============================================================== -->
+  <p class="hero__sub">Directing and shooting music videos, commercials, reels and documentary work across Sri Lanka.</p>
+
+  <a href="#work" class="btn">VIEW THE WORK <span>&darr;</span></a>
+
+  <div class="hero__scroll" aria-hidden="true">SCROLL <span>&#9662;</span></div>
+</section>
+
+<!-- ============================= WORK ============================= -->
+<section id="work">
+  <div class="section-head">
+    <span class="section-head__code">00:01</span>
+    <h2>Selected Work</h2>
+  </div>
+
+  <div class="filters" role="tablist" aria-label="Filter work by category">
+    <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">ALL</button>
+    <button class="filter" data-filter="aftermovie" role="tab" aria-selected="false">AFTERMOVIE</button>
+    <button class="filter" data-filter="music-videos" role="tab" aria-selected="false">MUSIC VIDEOS</button>
+    <button class="filter" data-filter="documentary" role="tab" aria-selected="false">DOCUMENTARY</button>
+    <button class="filter" data-filter="reels" role="tab" aria-selected="false">REELS</button>
+    <button class="filter" data-filter="others" role="tab" aria-selected="false">OTHERS</button>
+  </div>
+
+  <div class="grid" id="portfolioGrid">
+    <!-- Populated from js/data.js + js/main.js -->
+  </div>
+</section>
+
+<!-- ============================= ABOUT / CV ============================= -->
+<section id="about">
+  <div class="section-head">
+    <span class="section-head__code">00:02</span>
+    <h2>The Director's Cut</h2>
+  </div>
+
+  <div class="about__grid">
+    <div class="about__bio">
+      <!-- ==============================================================
+           EDIT ME: replace this bio with 3–5 sentences in your own voice.
+           ============================================================== -->
+      <p class="lede">Kavishanke Adithya is a Sri Lankan based filmmaker and the founder of Kalu Creatives, known for his creative approach with a passion for cinematic visuals and storytelling.</p>
+      <p>He is a passionate videographer and visual storyteller with a strong interest in creating cinematic and meaningful visual experiences. With a keen eye for composition, lighting, movement, and detail, he approaches every project with creativity and a commitment to capturing stories in an authentic and engaging way.<br><br>He is currently an <b>Undergraduate in BA (Hons) in Creative Multimedia at NIBM</b>, building his expertise across various areas of digital media and creative production. He has also successfully completed the <b>Advanced Diploma in Advertising and Multimedia at NIBM</b>, the <b>Certificate Course on Filming at the Asian Film Academy</b>, and the <b>Certificate Course in Television Cinematography and Lighting at Sri Lanka Rupavahini Corporation.</b> His academic and professional training in multimedia, advertising, filmmaking, cinematography, and lighting has helped him develop a well-rounded understanding of visual production. <br><br>Combining his technical knowledge with a creative approach, Kavishanke continues to explore new ways of visual storytelling through videography, filmmaking, and digital media. His goal is to create visuals that not only look compelling but also communicate emotions, ideas, and stories effectively.
+</p>
+      <a href="#contact" class="btn btn--ghost">GET IN TOUCH</a>
+    </div>
+
+    <div class="about__credits">
+      <div class="credits__portrait">
+        <span class="credits__portrait-tick credits__portrait-tick--tl"></span>
+        <span class="credits__portrait-tick credits__portrait-tick--tr"></span>
+        <span class="credits__portrait-tick credits__portrait-tick--bl"></span>
+        <span class="credits__portrait-tick credits__portrait-tick--br"></span>
+        <span class="credits__portrait-code"></span>
+        <img src="Adi.png" alt="Kavishanke Adithya" class="credits__portrait-img">
+      </div>
+
+      <p class="credits__label">CREDITS - ROLL</p>
+
+      <!-- ==============================================================
+           EDIT ME: styled like a film credits roll. Replace role /
+           project / years, add or remove .timeline__item blocks.
+           ============================================================== -->
+      <div class="timeline">
+        <div class="timeline__item">
+          <h3>Founder &amp; Director</h3>
+          <p>Kalu Creatives</p>
+        </div>
+        <div class="timeline__item">
+          <h3>Director of Photography</h3>
+          <p>Freelance - brand &amp; music video work</p>
+        </div>
+        <div class="timeline__item">
+          <h3>Editor</h3>
+          <p>Freelance</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= SERVICES ============================= -->
+<section id="services">
+  <div class="section-head">
+    <span class="section-head__code">00:03</span>
+    <h2>What I Shoot</h2>
+  </div>
+
+  <!-- ==============================================================
+       EDIT ME: edit / add / remove service blocks below.
+       ============================================================== -->
+  <div class="services__grid">
+    <div class="service">
+      <span class="service__code">01</span>
+      <h3>Reels &amp; Social Content</h3>
+      <p>Short-form, fast-turnaround content built for Instagram, TikTok and YouTube Shorts.</p>
+    </div>
+    <div class="service">
+      <span class="service__code">02</span>
+      <h3>Music Videos</h3>
+      <p>Concept-to-delivery production, from treatment and location scouting through the final grade.</p>
+    </div>
+    <div class="service">
+      <span class="service__code">03</span>
+      <h3>Documentary Film</h3>
+      <p>Long-form, story-led documentary work - people, craft and communities across Sri Lanka.</p>
+    </div>
+    <div class="service">
+      <span class="service__code">04</span>
+      <h3>Corporate &amp; Brand Films</h3>
+      <p>Interviews, product films and brand stories for companies that want to look as good as they are.</p>
+    </div>
+    <div class="service">
+      <span class="service__code">05</span>
+      <h3>Aerial / Drone</h3>
+      <p>Drone cinematography for establishing shots, events and landscape sequences.</p>
+    </div>
+    <div class="service">
+      <span class="service__code">06</span>
+      <h3>Aftermovies &amp; Events</h3>
+      <p>Full-day coverage, cut into a highlight film and a longer feature edit.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= CONTACT ============================= -->
+<section id="contact">
+  <div class="section-head">
+    <span class="section-head__code">00:04</span>
+    <h2>Let's Create</h2>
+  </div>
+
+  <div class="contact__grid">
+    <div>
+      <!-- ==============================================================
+           EDIT ME: replace with real contact details.
+           ============================================================== -->
+      <ul class="contact__list">
+        <li><span>Email</span><a href="mailto:kalucreatives.admin@gmail.com">kalucreatives.admin@gmail.com</a></li>
+        <li><span>Phone</span><a href="tel:+94761910650">+94 76 191 0650</a></li>
+        <li><span>Based in</span>Negombo, Sri Lanka</li>
+      </ul>
+      <div class="social">
+        <a href="https://instagram.com/kalu.creatives" target="_blank" rel="noopener">INSTAGRAM</a>
+
+      </div>
+    </div>
+
+    <form class="contact__form" id="contactForm" action="https://formsubmit.co/kalucreatives.admin@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New enquiry — Kalu Creatives website">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="project">Project type</label>
+        <select id="project" name="project">
+          <option>Reel / Social content</option>
+          <option>Music video</option>
+          <option>Documentary</option>
+          <option>Wedding / Event</option>
+          <option>Corporate / Brand film</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn" id="contactSubmit">SEND MESSAGE</button>
+      <p class="form__note" id="formStatus" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <span>&copy; <span id="year"></span> Kalu Creatives</span>
+  <span>ALL RIGHTS RESERVED</span>
+</footer>
+
+<!-- ============================= LIGHTBOX ============================= -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox__backdrop" data-close></div>
+  <div class="lightbox__panel">
+    <button class="lightbox__close" data-close aria-label="Close video">&times;</button>
+    <div class="lightbox__frame" id="lightboxFrame"></div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
