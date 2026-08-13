@@ -74,5 +74,23 @@ const portfolioVideos = [
     title: "Munnakkara",
     category: "documentary",
     year: "2023"
+  },
+  {
+    id: "ASEvkmCOVIg",
+    title: "Asaya Sands",
+    category: "reels",
+    year: "2025"
+  },
+  {
+    id: "g_3cVxF7dtg",
+    title: "Mora",
+    category: "reels",
+    year: "2025"
+  },
+  {
+    id: "NsFohIuihnQ",
+    title: "Ceylon Kitchen",
+    category: "reels",
+    year: "2025"
   }
 ];
